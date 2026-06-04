@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Date?</title>
+<style>
+    body{
+        margin:0;
+        height:100vh;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        background:#ffdde1;
+        font-family:Arial,sans-serif;
+        text-align:center;
+    }
+    .box{
+        background:white;
+        padding:40px;
+        border-radius:20px;
+        box-shadow:0 4px 15px rgba(0,0,0,.2);
+    }
+    h1{
+        color:#ff4d6d;
+    }
+    button{
+        background:#ff4d6d;
+        color:white;
+        border:none;
+        padding:15px 35px;
+        font-size:18px;
+        border-radius:30px;
+        cursor:pointer;
+    }
+    button:hover{
+        transform:scale(1.05);
+    }
+</style>
+</head>
+<body>
+    <div class="box">
+        <h1>Will you go on a date with me? ❤️</h1>
+        <button onclick="accepted()">YES ❤️</button>
+        <p id="msg"></p>
+    </div>
+
+<script>
+function accepted(){
+    document.getElementById("msg").innerHTML =
+    "Yay! ❤️ I can't wait!";
+}
+</script>
+</body>
+</html>
